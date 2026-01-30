@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Site</title>
-  <meta name="description" content="A clean starter website." />
+  <title>YourSite</title>
+  <meta name="description" content="Math, music, and art." />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
@@ -12,42 +12,46 @@
   <header class="site-header">
     <div class="container header-row">
       <a class="brand" data-home-link href="#">YourSite</a>
-
       <nav class="nav">
-        <a data-link href="index.html">Home</a>
-        <a data-link href="about.html">About</a>
-        <a data-link href="contact.html">Contact</a>
+        <a data-link href="index.html" aria-current="page">Home</a>
+        <a data-link href="math/index.html">Math</a>
+        <a data-link href="music/index.html">Music</a>
+        <a data-link href="art/index.html">Art</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <p class="kicker">Minimal, clean, extendable</p>
-      <h1>Build from this.</h1>
+      <p class="kicker">One site, three lanes</p>
+      <h1>Math. Music. Art.</h1>
       <p class="lead">
-        This is a lightweight static site starter: no frameworks, no build step.
+        A simple structure you can keep adding to without rethinking the whole website every time.
       </p>
       <div class="actions">
-        <a class="button" data-link href="about.html">See the About page</a>
-        <a class="button ghost" data-link href="contact.html">Contact</a>
+        <a class="button" data-link href="math/index.html">Math</a>
+        <a class="button ghost" data-link href="music/index.html">Music</a>
+        <a class="button ghost" data-link href="art/index.html">Art</a>
       </div>
     </section>
 
-    <section class="grid">
+    <section class="grid mt-16">
       <article class="card">
-        <h2>Fast</h2>
-        <p>Just HTML/CSS/JS. Loads quickly and deploys anywhere.</p>
+        <h2>Math</h2>
+        <p>Notes, proofs, problems. Text-first.</p>
+        <p class="mt-12"><a class="button ghost" data-link href="math/index.html">Open Math</a></p>
       </article>
 
       <article class="card">
-        <h2>GitHub Pages-friendly</h2>
-        <p>Works under <code>/REPO/</code> automatically with a small config.</p>
+        <h2>Music</h2>
+        <p>Embeds + short intent notes. Listening-first.</p>
+        <p class="mt-12"><a class="button ghost" data-link href="music/index.html">Open Music</a></p>
       </article>
 
       <article class="card">
-        <h2>Easy to expand</h2>
-        <p>Add pages, sections, blog posts—whatever you want next.</p>
+        <h2>Art</h2>
+        <p>Images first. Captions short. Gallery-style.</p>
+        <p class="mt-12"><a class="button ghost" data-link href="art/index.html">Open Art</a></p>
       </article>
     </section>
   </main>
