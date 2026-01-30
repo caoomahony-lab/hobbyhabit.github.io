@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music — YourSite</title>
+  <meta name="description" content="Music clips, pieces, and notes." />
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" data-home-link href="#">YourSite</a>
+      <nav class="nav">
+        <a data-link href="../index.html">Home</a>
+        <a data-link href="../math/index.html">Math</a>
+        <a data-link href="index.html" aria-current="page">Music</a>
+        <a data-link href="../art/index.html">Art</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <h1>Music</h1>
+      <p class="lead">Listening-first entries: embed → short intent note.</p>
+
+      <div class="stack mt-16">
+        <article class="entry">
+          <header class="entry-head">
+            <h2 class="entry-title">Example: Sketch 01</h2>
+            <p class="entry-meta">Jan 30, 2026</p>
+          </header>
+
+          <div class="embed-frame mt-12">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Music embed"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+
+          <p class="entry-blurb mt-12">
+            1–4 sentences: what you were aiming for, or one technical note (tempo, harmony, texture, sound design).
+          </p>
+        </article>
+
+        <article class="entry">
+          <header class="entry-head">
+            <h2 class="entry-title">Example: Track notes</h2>
+            <p class="entry-meta">Jan 01, 2026</p>
+          </header>
+
+          <div class="card subtle mt-12">
+            <p class="muted">
+              Swap the embed for SoundCloud/Bandcamp/etc. (they usually provide an iframe snippet).
+            </p>
+          </div>
+
+          <p class="entry-blurb mt-12">
+            Keep this short. If you want longer writing, put it in Math or a separate “Writing” lane later.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small class="muted">© <span id="year"></span> YourSite</small>
+      <small class="muted"><a data-link href="../index.html">Back home</a></small>
+    </div>
+  </footer>
+</body>
+</html>
