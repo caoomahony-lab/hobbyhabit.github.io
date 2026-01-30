@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Math — YourSite</title>
+  <meta name="description" content="Math notes and explorations." />
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" data-home-link href="#">YourSite</a>
+      <nav class="nav">
+        <a data-link href="../index.html">Home</a>
+        <a data-link href="index.html" aria-current="page">Math</a>
+        <a data-link href="../music/index.html">Music</a>
+        <a data-link href="../art/index.html">Art</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <h1>Math</h1>
+      <p class="lead">Text-first entries: title → short explanation → content.</p>
+
+      <div class="stack mt-16">
+        <article class="entry">
+          <header class="entry-head">
+            <h2 class="entry-title">Example: A small proof sketch</h2>
+            <p class="entry-meta">Jan 30, 2026 • 3 min</p>
+          </header>
+
+          <p class="entry-blurb">
+            What this is: a short explanation of the goal and why it’s interesting (2–5 sentences).
+          </p>
+
+          <div class="entry-body">
+            <p>
+              Write the math content here. Keep it readable. If you want, link to a PDF:
+              <a href="#" aria-disabled="true">PDF (coming soon)</a>.
+            </p>
+            <ul>
+              <li>Define objects</li>
+              <li>State claim</li>
+              <li>Give the key steps</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <header class="entry-head">
+            <h2 class="entry-title">Example: Problem solve</h2>
+            <p class="entry-meta">Jan 12, 2026 • 5 min</p>
+          </header>
+
+          <p class="entry-blurb">
+            Start with the problem statement and a quick line on the strategy.
+          </p>
+
+          <div class="entry-body">
+            <p>
+              Put the solution here. Add diagrams later if you want.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small class="muted">© <span id="year"></span> YourSite</small>
+      <small class="muted"><a data-link href="../index.html">Back home</a></small>
+    </div>
+  </footer>
+</body>
+</html>
