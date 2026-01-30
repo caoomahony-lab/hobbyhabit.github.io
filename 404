@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 — Not Found</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" data-home-link href="#">YourSite</a>
+      <nav class="nav">
+        <a data-link href="index.html">Home</a>
+        <a data-link href="about.html">About</a>
+        <a data-link href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <h1>404</h1>
+      <p class="lead">That page doesn’t exist.</p>
+      <a class="button" data-link href="index.html">Go home</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small class="muted">© <span id="year"></span> YourSite</small>
+    </div>
+  </footer>
+</body>
+</html>
