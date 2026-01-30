@@ -1,0 +1,26 @@
+// If deploying on GitHub Pages at https://USERNAME.github.io/REPO/
+// set this to "/REPO/". Example: const BASE_PATH = "/caoomahony.github.io/";
+const BASE_PATH = ""; // or "/YOUR_REPO_NAME/"
+
+function withBase(path) {
+  const base = BASE_PATH.endsWith("/") ? BASE_PATH : (BASE_PATH ? BASE_PATH + "/" : "");
+  return base + path.replace(/^\//, "");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Set year
+  const y = document.getElementById("year");
+  if (y) y.textContent = String(new Date().getFullYear());
+
+  // Make nav links work under BASE_PATH
+  document.querySelectorAll("[data-link]").forEach(a => {
+    const href = a.getAttribute("href");
+    if (!href) return;
+    a.setAttribute("href", withBase(href));
+  });
+
+  // Brand link goes home
+  document.querySelectorAll("[data-home-link]").forEach(a => {
+    a.setAttribute("href", withBase("index.html"));
+  });
+});
