@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Site</title>
+  <meta name="description" content="A clean starter website." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" data-home-link href="#">YourSite</a>
+
+      <nav class="nav">
+        <a data-link href="index.html">Home</a>
+        <a data-link href="about.html">About</a>
+        <a data-link href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="kicker">Minimal, clean, extendable</p>
+      <h1>Build from this.</h1>
+      <p class="lead">
+        This is a lightweight static site starter: no frameworks, no build step.
+      </p>
+      <div class="actions">
+        <a class="button" data-link href="about.html">See the About page</a>
+        <a class="button ghost" data-link href="contact.html">Contact</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Fast</h2>
+        <p>Just HTML/CSS/JS. Loads quickly and deploys anywhere.</p>
+      </article>
+
+      <article class="card">
+        <h2>GitHub Pages-friendly</h2>
+        <p>Works under <code>/REPO/</code> automatically with a small config.</p>
+      </article>
+
+      <article class="card">
+        <h2>Easy to expand</h2>
+        <p>Add pages, sections, blog posts—whatever you want next.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small class="muted">© <span id="year"></span> YourSite</small>
+      <small class="muted">Built with plain files.</small>
+    </div>
+  </footer>
+</body>
+</html>
