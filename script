@@ -1,6 +1,6 @@
 // If deploying on GitHub Pages at https://USERNAME.github.io/REPO/
 // set this to "/REPO/". Example: const BASE_PATH = "/caoomahony.github.io/";
-const BASE_PATH = ""; // or "/YOUR_REPO_NAME/"
+const BASE_PATH = "/hobbyhabit.github.io/";
 
 function withBase(path) {
   const base = BASE_PATH.endsWith("/") ? BASE_PATH : (BASE_PATH ? BASE_PATH + "/" : "");
